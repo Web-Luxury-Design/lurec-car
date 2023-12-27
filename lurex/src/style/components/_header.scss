@@ -1,0 +1,60 @@
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    span{
+        letter-spacing: 4px;
+        font-size: 2rem;
+        display: inline-block;
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li{
+            padding-bottom: 10px;
+            letter-spacing: 2px;
+            font-size: 1rem;
+            cursor: pointer;
+            position: relative;
+
+            &:nth-child(1){
+                border-bottom: 2px solid $color1;
+                filter: brightness(0.8);
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background: $color1;
+                bottom: -2px;
+                left: 50%;
+            }
+            &:hover::before{
+                animation: traitNav 0.5s ease-out forwards;
+            }
+            @keyframes traitNav {
+                0%{
+                    width: 0;
+                }
+                100%{
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+        button{
+            padding:7px 25px;
+            border: 2px solid $color1;
+            border-radius: 10px 5px 5px 5px;
+            background: transparent;
+            color: $color2;
+            cursor: pointer;
+            font-size: 1rem;
+            font-family: $font1;
+            margin-bottom: 10px;
+        }
+    }
+}
