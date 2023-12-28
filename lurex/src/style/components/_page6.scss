@@ -1,0 +1,47 @@
+.page6{
+    padding: 50px 30px 80px;
+    background: $color3;
+
+    .page6-container{
+        padding: 80px;
+        text-align: center;
+        color: $colorM;
+        background: url(../../assets/img/shimmering-golden-wave-abstractions.jpg) center/cover;
+        border-radius: 40px;
+
+        h2{
+            letter-spacing: 3px;
+            font-size: 2rem;
+        }
+
+        p{
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 40px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: 35px;
+        }
+
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 50px;
+
+            img{
+                width: 250px;
+                cursor: pointer;
+                transition: 0.25s ease-in;
+
+                &:hover{
+                    transform: scale(0.9);
+                }
+                &:nth-child(1){
+                    width: 280px;
+                }
+            }
+        }
+    }
+}

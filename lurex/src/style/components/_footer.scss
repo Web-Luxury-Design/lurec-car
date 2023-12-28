@@ -1,0 +1,42 @@
+.footer{
+    background: $color3;
+    padding: 0px 100px 35px;
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+    gap: 50px;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        filter: brightness(0.9);
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        li{
+            font-size: 1.1rem;
+            filter: brightness(0.9);
+        }
+    }
+    .icon{
+        li{
+            border-radius: 50%;
+            border: 1px solid $gray;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

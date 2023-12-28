@@ -7,7 +7,7 @@ const Page3 = () => {
       <div className="page3-container">
         <div className="contain">
           <div>
-            <i class="fa-solid fa-medal"></i>
+            <img src="./img/medal-solid.svg" alt="" />
           </div>
           <h4>Best Price</h4>
           <p>
@@ -17,7 +17,7 @@ const Page3 = () => {
         </div>
         <div className="contain">
           <div>
-            <i class="fa-solid fa-shield-halved fa-flip-horizontal"></i>
+            <img src="./img/shield-halved-solid.svg" alt="" />
           </div>
           <h4>Fast and Safe</h4>
           <p>

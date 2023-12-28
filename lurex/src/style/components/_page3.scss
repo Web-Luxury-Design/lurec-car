@@ -1,23 +1,27 @@
 .page3{
     text-align: center;
     background: $color3;
-    padding: 70px 60px 50px ;
+    padding: 50px 60px 10px ;
+    h2{
+        font-size: 2rem;
+    }
     .page3-container{
         display: flex;
         width: 90%;
         margin: 70px auto 0;
-        gap: 35px;
+        gap: 45px;
         align-items: center;
         justify-content: center;
 
         .contain{
             border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.336);
+            border: 1px solid $gray;
             height: 330px;
             width: 280px;
-            padding: 20px;
+            padding: 20px 13px;
             display: flex;
             flex-direction: column;
+            font-weight: 600;
             gap: 25px;
             div{
                 width: 80px;
@@ -25,6 +29,9 @@
                 background: $color1;
                 margin: 0 auto;
                 border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             h4{
                 letter-spacing: 2px;
@@ -34,10 +41,16 @@
             p{
                 line-height: 30px;
                 font-size: 0.9rem;
+                letter-spacing: 1px;
+            }
+            img{
+                width: 35px;
+                height: 35px;
             }
 
             &:nth-child(2){
                 background: $color1;
+                color: $colorM;
                 div{
                     background: $color3;
                 }
