@@ -1,17 +1,42 @@
 .page1{
-    padding: 30px 60px 40px;
+    padding: 30px 60px 0;
     height: 100vh;
+
+    .page1-container-all{
+        width: 100%;
+        height: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
     .page1-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page1-text{
         display: grid;
         grid-template-columns: 0.9fr 1.1fr;
         align-items: center;
         justify-content: center;
         margin-top: 30px;
+        @media screen and (max-width:850px) {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        
 
         .text-container{
             display: flex;
             flex-direction: column;
             align-items: baseline;
+            z-index: 100;
+            @media screen and (max-width:850px) {
+                align-items: center;
+                margin-top: 50px;
+            }
             h3{
                 font-size: 2rem;
                 letter-spacing: 2px;
@@ -54,12 +79,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @media screen and (max-width:850px) {
+                position: absolute;
+                top: 120px;
+                right: 5px;
+            }
             img{
                 width: 100%;
                 object-fit: cover;
                 border-radius: 150px;
                 filter: brightness(0.65);
                 animation: carShow 2.5s ease-in-out forwards;
+                @media screen and (max-width:850px) {
+                    width: 100%;
+                    opacity: 0.8;
+                }
 
                 @keyframes carShow {
                     0%{

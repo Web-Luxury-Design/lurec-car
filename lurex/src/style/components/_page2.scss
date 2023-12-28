@@ -1,17 +1,29 @@
 .page2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
     background: $color3;
-    padding: 60px 0 ;
-    @media screen and (max-width:900px) {
-        grid-template-columns: 1fr;
-        text-align: center;
+    padding: 100px 0 ;
+
+    .page2-container{
+        width: 100%;
+        height: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        background: $color3;
+        @media screen and (max-width:900px) {
+            grid-template-areas: "a" "b";
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
     }
 
     .img-container{
+        @media screen and (max-width:900px) {
+            grid-area: b;
+        }
         div{
             width: 100%;
             display: flex;
@@ -40,6 +52,12 @@
     }
     .text-container{
         padding-right: 50px;
+        @media screen and (max-width:900px) {
+            padding: 0 80px;
+        }
+        @media screen and (max-width:600px) {
+            padding: 0 40px;
+        }
         h2{
             font-size: 2rem;
             letter-spacing: 2px;

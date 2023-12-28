@@ -1,17 +1,46 @@
 .footer{
     background: $color3;
-    padding: 0px 100px 35px;
+    padding: 0px 90px 35px;
     display: grid;
     grid-template-columns: 15% 50% 35%;
     gap: 50px;
+    @media screen and (max-width:1000px) {
+        grid-template-columns: 10% 50% 40%;  
+    }
+    @media screen and (max-width:900px) {
+        grid-template-areas: "a" "b" "c";
+        grid-template-columns: 1fr;
+        padding:0 30px 35px ;
+    }
 
     .logo{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 2rem;
+        font-size: 1rem;
+        text-align: center;
         letter-spacing: 3px;
+        gap: 10px;
         filter: brightness(0.9);
+        @media screen and (max-width:900px) {
+            grid-area: c;
+            gap: 20px;
+        }
+        .marque{
+            border-bottom: 1px solid;
+            padding-bottom: 5px;
+            color: $gray;
+        }
+        p{
+            color: $gray;
+            font-size: 0.8rem;
+            span{
+                color: $color2;
+            }
+        }
+        
+
     }
 
     ul{
@@ -23,8 +52,14 @@
             font-size: 1.1rem;
             filter: brightness(0.9);
         }
+        @media screen and (max-width:900px) {
+            grid-area: a;
+        }
     }
     .icon{
+        @media screen and (max-width:900px) {
+            grid-area: b;
+        }
         li{
             border-radius: 50%;
             border: 1px solid $gray;
@@ -33,9 +68,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @media screen and (max-width:900px) {
+                height: 30px;
+                width: 30px;
+            }
 
             i{
                 font-size: 1.3rem;
+                @media screen and (max-width:900px) {
+                    font-size: 1rem; 
+                }
             }
         }
     }

@@ -4,7 +4,10 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="logo">
-        <span>Lurex</span>
+        <span className="marque">Lurex</span>
+        <p>
+          create by <span>WebLuxury</span>
+        </p>
       </div>
       <ul className="link">
         <li>About</li>

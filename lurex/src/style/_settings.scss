@@ -33,6 +33,7 @@ body{
     h1,h2,h3,h4{
         font-family: $fontT;
     }
+    overflow-x: hidden;
 
     li,button{
         transition: 0.25s ease;
