@@ -36,6 +36,8 @@ body{
 
     li,button{
         transition: 0.25s ease;
+        font-family: $font1;
+        font-weight: 300;
         cursor: pointer;
         &:hover{
             transform: scale(1.1);
